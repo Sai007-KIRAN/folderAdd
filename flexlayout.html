@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Flex Layout</title>
+  <style>
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+  color: #333;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.photo {
+  flex: 1 1 250px;
+  max-width: 250px;
+}
+
+.photo img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">MyGallery</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1 class="title">Photo Gallery</h1>
+  <div class="gallery">
+    <div class="photo"><img src="catimage.jpg" alt="Photo 1"></div>
+    <div class="photo"><img src="catimage.jpg" alt="Photo 2"></div>
+    <div class="photo"><img src="catimage.jpg" alt="Photo 3"></div>
+    <div class="photo"><img src="catimage.jpg" alt="Photo 4"></div>
+    <div class="photo"><img src="catimage.jpg" alt="Photo 5"></div>
+    <div class="photo"><img src="catimage.jpg" alt="Photo 6"></div>
+  </div>
+
+</body>
+</html>

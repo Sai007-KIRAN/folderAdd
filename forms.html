@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        .formCss{
+            width: 350px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px;
+            margin: auto;
+            margin-top: 100px;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            color: darkblue;
+            text-align: left;
+            background-color: lightgrey;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        button{
+            margin-top: 5px;
+        }
+        br{
+            margin-top: 5px;
+        }
+        div{
+            background-color: aqua;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+        }
+        .btn-submit{
+            width: 100px;
+            height: 25px;
+            border-width: 0;
+            align-self: center;
+        }
+        input{
+            height: 25px;
+            border-radius: 5px;
+            border-width: 0;
+            padding: 5px;
+        } 
+        button{
+            background-color: lightgreen;
+            color: darkgreen;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="courseDetails.html" target="_blank">
+        <div class="formCss">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter Email">
+        <br>
+        <label for="pass">Password</label>
+        <input type="password" name="password" id="pass"  placeholder="Enter Password">
+        <br>
+        <button type="submit" class="btn-submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

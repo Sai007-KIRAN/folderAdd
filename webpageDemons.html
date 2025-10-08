@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Demo</title>
+    <style>
+        /* Element Selector */
+        h1 {
+            color: #2e8b57;
+            text-align: center;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: #ffe4b5;
+            font-weight: bold;
+        }
+
+        /* ID Selector */
+        #unique {
+            color: #1e90ff;
+            font-size: 1.2em;
+        }
+
+        /* Universal Selector */
+        /* * {
+            font-family: Arial, sans-serif;
+        } */
+
+        /* Attribute Selector */
+        a[target="_blank"] {
+            color: #d2691e;
+            text-decoration: underline;
+        }
+
+        /* Pseudo-class Selector */
+        h2:hover {
+            background-color: #d3ffd3;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>This is main heading</h1>
+        <h2 class="highlight">This is First heading.</h2>
+        <h2 id="unique">This is Second Heading</h2>
+        <a href="trth.html" target="_blank">Hello WOrld</a>
+    </div>
+</body>
+</html>
